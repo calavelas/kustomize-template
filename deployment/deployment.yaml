@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: APP_NAME
+  name: app
 spec:
   replicas: 1
   selector:
@@ -9,7 +9,7 @@ spec:
     metadata:
     spec:
       containers:
-        - name: APP_NAME
+        - name: app
           image: IMAGE_REGISTRY
           imagePullPolicy: IfNotPresent
           ports:

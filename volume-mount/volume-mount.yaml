@@ -1,0 +1,13 @@
+- op: add
+  path: /spec/template/spec/volumes/-
+  value:
+    name: dlq
+    hostPath:
+     type: DirectoryOrCreate
+     path: /logstash
+
+- op: add
+  path: /spec/template/spec/containers/0/volumeMounts/-
+  value:
+    name: dlq
+    mountPath: /app/config
