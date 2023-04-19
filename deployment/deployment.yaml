@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: $(APP_NAME)
-          image: IMAGE_REGISTRY_URL_SIT:abc
+          image: $(IMAGE_REGISTRY_URL_SIT):abc
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
