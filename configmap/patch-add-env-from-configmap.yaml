@@ -6,7 +6,7 @@ spec:
   template:
     spec:
       containers:
-      - name: app
+      - name: application
         envFrom:
         - configMapRef:
-            name: my-config-env
+            name: configmap-env
