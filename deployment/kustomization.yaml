@@ -4,8 +4,8 @@ kind: Kustomization
 resources:
   - deployment.yaml
 
-nameReference:
-- kind: ConfigMap
-  fieldSpecs:
-    - path: metadata/name
-      kind: Deployment
+# nameReference:
+# - kind: ConfigMap
+#   fieldSpecs:
+#     - path: metadata/name
+#       kind: Deployment
