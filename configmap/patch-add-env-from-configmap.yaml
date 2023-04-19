@@ -9,4 +9,4 @@ spec:
       - name: app
         envFrom:
         - configMapRef:
-            name: my-config
+            name: my-config-env
