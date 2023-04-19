@@ -8,5 +8,7 @@ spec:
       containers:
       - name: application
         envFrom:
-        - configMapRef:
+        - $patch: merge
+          configMapRef:
             name: configmap-env
+
