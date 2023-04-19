@@ -4,5 +4,8 @@ kind: Kustomization
 resources:
   - deployment.yaml
 
-commonLabels:
-  someName: someValue
+nameReference:
+- kind: ConfigMap
+  fieldSpecs:
+    - path: metadata/name
+      kind: Deployment
