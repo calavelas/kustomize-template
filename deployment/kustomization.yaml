@@ -3,9 +3,3 @@ kind: Kustomization
 
 resources:
   - deployment.yaml
-
-nameReference:
-- kind: Deployment
-  fieldSpecs:
-    - path: metadata/name
-      kind: Deployment
