@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment
+spec:
+  template:
+    spec:
+      volumes:
+      - name: configmap-file
+        configMap:
+          name: configmap-file
+      containers:
+      - name: application
+        volumeMounts:
+        - name: configmap-file
+          mountPath: /configs/
+
