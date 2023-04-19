@@ -4,5 +4,5 @@ kind: Kustomization
 resources:
   - deployment.yaml
 
-configurations:
-  - transformer.yaml
+commonLabels:
+  someName: someValue
