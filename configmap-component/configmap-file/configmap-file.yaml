@@ -13,5 +13,4 @@ spec:
       - name: application
         volumeMounts:
         - name: configmap-file
-          mountPath: /configs/
-
+          mountPath: /app/config/
